@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Circle?>
+<?scenebuilder-stylesheet JMetroLightTheme.css?>
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<AnchorPane  fx:controller="version2.View" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" styleClass="background" xmlns:fx="http://javafx.com/fxml">
+    <children>
+      
+       <Label layoutX="43.0" layoutY="30.0" styleClass="item-title" text="Tempo" />
+       <Slider fx:id="slider" onMouseReleased="#onSliderChanged" layoutX="43.0" layoutY="50.0"  />
+       
+       <Button fx:id="start"  onAction="#onStart" layoutX="40.0" prefWidth="60.0" layoutY="160.0" text="Start" />
+       <Button fx:id="stop" onAction="#onStop"  layoutX="120.0" prefWidth="60.0" layoutY="160.0" text="Stop" />
+       <Button fx:id="inc"  onAction="#onInc" layoutX="200.0"  prefWidth="60.0" layoutY="160.0" text="Inc" />
+       <Button fx:id="dec"  onAction="#onDec" layoutX="280.0"  prefWidth="60.0" layoutY="160.0" text="Dec" />
+
+      <Label layoutX="220.0" layoutY="30.0" styleClass="item-title" text="Tempo" />
+      <TextField fx:id="temps"  prefWidth="120.0" layoutX="220.0" layoutY="50.0"  />
+      
+      
+      <Label layoutX="220.0" layoutY="80.0" styleClass="item-title" text="Mesure" />
+      <TextField fx:id="mesure"  prefWidth="120.0" layoutX="220.0" layoutY="100.0"  />
+      
+      <Label layoutX="380.0" layoutY="10.0"  text="Led 1" />
+      <Circle fx:id="led1" radius="20.0"  layoutX="400.0" layoutY="50.0" />
+      <Label layoutX="380.0" layoutY="80.0"  text="Led 2" />
+      <Circle fx:id="led2" radius="20.0"  layoutX="400.0" layoutY="120.0" />
+      
+      
+    </children>
+</AnchorPane>
